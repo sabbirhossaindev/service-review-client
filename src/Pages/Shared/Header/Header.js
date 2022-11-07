@@ -20,9 +20,9 @@ const Header = () => {
         {
             user?.email ? 
             <>
-            <li className='font-semibold'><Link to='/orders'>Orders</Link></li>
-            <li className='font-semibold ml-20'>
-                <button onClick={handleLogOut} className='btn-ghost bg-orange-600 text-white'>Sign Out</button>
+            {/* <li className='font-semibold'><Link to='/orders'>Orders</Link></li> */}
+            <li className='font-semibold mr-20'>
+                <button onClick={handleLogOut} className='btn-ghost bg-blue-400 text-white'>Sign Out</button>
             </li>
             </>
             :
@@ -49,9 +49,6 @@ const Header = () => {
                 <ul className="menu menu-horizontal p-0">
                     {menuItems}
                 </ul>
-            </div>
-            <div className="navbar-end">
-                <button className="btn btn-outline btn-warning">Appointment</button>
             </div>
         </div>
     );

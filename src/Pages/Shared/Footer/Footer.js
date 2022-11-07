@@ -8,7 +8,8 @@ const Footer = () => {
         <footer className="footer p-28 bg-black text-white">
             <div>
                 <img src={logo} alt="" className='logo rounded-xl'/>
-                <p>Edwin Diaz is a software and web <br /> technologies engineer, a life coach <br /> trainer who is also a serial .</p>
+                <p className='text-xl text-rose-500'>Copy Right 2022 || All Right <br />
+                 Doctor Service.</p>
             </div> 
             <div>
                 <span className="footer-title">Services</span> 

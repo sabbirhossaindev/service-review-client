@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 
  
@@ -12,30 +12,30 @@ const AuthProvider = ({children}) => {
 
 
     // All Provider
-    // const googleProvider = new GoogleAuthProvider();
+    const googleProvider = new GoogleAuthProvider();
 
-    // const createUser = (email, password) => {
-    //     setLoading(true)
-    //     return createUserWithEmailAndPassword(auth, email, password)
-    // }
+    const createUser = (email, password) => {
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
 
-    // const login = (email, password) => {
-    //     setLoading(true)
-    //     return signInWithEmailAndPassword(auth, email, password)
-    // }
+    const login = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password)
+    }
 
-    // const signInWithGoogle = () => {
-    //     setLoading(true)
-    //     return signInWithPopup(auth, googleProvider);
-    // };
+    const signInWithGoogle = () => {
+        setLoading(true)
+        return signInWithPopup(auth, googleProvider);
+    };
 
    
 
 
-    // const logOut = () => {
-    //     localStorage.removeItem('Genius-token');
-    //     return signOut(auth)
-    // }
+    const logOut = () => {
+        localStorage.removeItem('Genius-token');
+        return signOut(auth)
+    }
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
@@ -49,7 +49,7 @@ const AuthProvider = ({children}) => {
         }
     },[])
     
-    const authInfo = {user, loading,}
+    const authInfo = {user, loading, createUser, login, logOut, signInWithGoogle}
 
     return (
         <AuthContext.Provider value={authInfo}>
