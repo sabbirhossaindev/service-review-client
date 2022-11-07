@@ -17,6 +17,7 @@ const Header = () => {
     const menuItems = 
     <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
+        <li className='font-semibold'><Link to='/blogs'>Blogs</Link></li>
         {
             user?.email ? 
             <>
@@ -25,7 +26,7 @@ const Header = () => {
                 <button onClick={handleLogOut} className='btn-ghost bg-blue-400 text-white'>Sign Out</button>
             </li>
             </>
-            :
+            :    
             <li className='font-semibold'><Link to='/login'>Login</Link></li>
         }
     </>

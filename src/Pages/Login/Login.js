@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import logo from '../../assets/img/logo.png';
+import img from '../../assets/img/login.gif';
 import { FcGoogle } from "react-icons/fc";
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
@@ -59,7 +59,7 @@ const Login = () => {
         <div className="hero w-full my-20">
             <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
-                    <img className='w-3/4 rounded-md' src={logo} alt="" />
+                    <img className='w-3/4 rounded-md' src={img} alt="" />
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20">
                     <h1 className="text-5xl text-center font-bold">Login</h1>
@@ -97,7 +97,7 @@ const Login = () => {
                         <button onClick={handleGoogleSignIn} aria-label='Log in with Google' className='p-3 rounded-sm'><FcGoogle/></button>
                     </div>
 
-                    <p className='text-center'>New to Genius Car <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
+                    <p className='text-center'>New to Doctor service <Link className='text-orange-600 font-bold' to="/signup">Sign Up</Link> </p>
                 </div>
             </div>
         </div>
