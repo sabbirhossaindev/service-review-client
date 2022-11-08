@@ -3,6 +3,7 @@ import Main from "../../layout/Main";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
+import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import SignUp from "../../Pages/SignUp/SignUp";
 
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
                 path: '/blogs',
                 element: <Blogs></Blogs>
             },
+            {
+                path: '*',
+                element: <NotFound></NotFound>
+            }
         ]
     }
 ])

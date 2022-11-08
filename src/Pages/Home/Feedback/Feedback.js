@@ -10,7 +10,7 @@ const Feedback = () => {
             <div className='text-center mb-5 mt-8'>
                 <p className="text-2xl font-bold text-rose-600">FeetBack</p>
                 <h2 className="text-5xl font-semibold">What Customer Says</h2>
-                <p className='mt-3'>“Thank you for being the dedicated, thoughtful, and compassionate doctor that you are! You always go above and beyond and work tirelessly towards a healthy outcome. I feel so blessed to know you and have you as my doctor.”</p>
+                <p className='mt-3 text-gray-500'>“Thank you for being the dedicated, thoughtful, and compassionate doctor that you are! You always go above and beyond and work tirelessly towards a healthy outcome. I feel so blessed to know you and have you as my doctor.”</p>
             </div>
 
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-14 p-3'>

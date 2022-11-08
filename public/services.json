@@ -1,0 +1,52 @@
+[
+    {
+
+        "service_id": "01",
+        "title": "Fever-Cold",
+        "img": "https://i.ibb.co/3T96zqW/fever-cold.webp",
+        "price": "$20.00",
+        "description": "Catching a cold usually doesn't require a visit to the doctor, and unless there's a complication, medication is not routinely given for the virus that causes a common cold. Antibiotics will not work on a virus. Symptoms of the common cold typically go away within one to two weeks, and any treatment would be to alleviate some of the common symptoms like stuffy nose or sore throat."
+        
+    },
+    {
+
+        "service_id": "02",
+        "title": "Eye Check",
+        "img": "https://i.ibb.co/fStWNs5/2.jpg",
+        "price": "$25.00",
+        "description": "An eye exam involves a series of tests to evaluate your vision and check for eye diseases. Your eye doctor is likely to use various instruments, shine bright lights at your eyes and request that you look through an array of lenses. Each test during an eye exam evaluates a different aspect of your vision or eye health."
+    },
+    {
+
+        "service_id": "03",
+        "title": "Blood Test",
+        "img": "https://i.ibb.co/NYHRBbF/3.webp",
+        "price": "$30.00",
+        "description": "A blood test usually involves taking a blood sample from a blood vessel in your arm.The arm is a convenient part of the body to use because it can be easily uncovered. The usual place for a sample to be taken from is the inside of the elbow or wrist, where the veins are relatively close to the surface. Blood samples from children are often taken from the back of the hand. Their skin may be numbed with a special spray or cream before the sample is taken."
+    },
+    {
+
+        "service_id": "04",
+        "title": "Teeth Check",
+        "img": "https://i.ibb.co/tL4XxHw/4.jpg",
+        "price": "$70.00",
+        "description": "Like most other mammals, humans have two successive sets of teeth during life. The first set of teeth are called primary, or deciduous, ones, and the second set are called permanent ones. Humans have 20 primary and 32 permanent teeth. Primary teeth differ from permanent teeth in being smaller, having more pointed cusps, being whiter and more prone to wear, and having relatively large pulp chambers and small, delicate roots"
+    },
+    {
+
+        "service_id": "05",
+        "title": "Blood Pressure Check",
+        "img": "https://i.ibb.co/4sgZHff/5.jpg",
+        "price": "30.00",
+        "description": "Blood pressure machines vary, but they're all a type of measuring device, which often have an arm cuff attached to it.The cuff is usually wrapped around your upper arm and filled with air until it feels tight. This can feel uncomfortable but it only lasts a few seconds.It's important to relax and not talk during this time, because this is when your blood pressure is measured.If a healthcare professional is doing this for you, they may also use a stethoscope to record your blood pressure.An automatic device usually picks up the measurements from sensors in the arm cuff, which are sent to a digital display."
+        
+    },
+    {
+
+        "service_id": "06",
+        "title": "Sugar Test",
+        "img": "https://i.ibb.co/hsyBjZv/6.webp",
+        "price": "$10.00",
+        "description": "A blood sugar test can be used to determine the amount of glucose in the blood. It may be used to diagnose diabetes or to help those with diabetes check their blood sugar and insulin levels.A blood sugar test is a procedure that measures the amount of sugar, or glucose, in your blood. A doctor may order this test to help diagnose diabetes. People with type 1 and type 2 diabetes also use this test to manage their condition."    
+    }
+]
