@@ -11,22 +11,22 @@ const Banner = () => {
     return (
         <div className='p-3'>
             <div className="carousel w-full">
-            <div id="item1" className="carousel-item w-full carousel-img">
+            <div id="item1" className="carousel-item w-full carousel-img relative">
                 <img src={img1} alt="" className="w-full rounded-xl" />
             </div> 
-            <div id="item2" className="carousel-item w-full carousel-img">
+            <div id="item2" className="carousel-item w-full carousel-img relative">
                 <img src={img2} alt="" className="w-full rounded-xl" />
             </div> 
-            <div id="item3" className="carousel-item w-full carousel-img">
+            <div id="item3" className="carousel-item w-full carousel-img relative">
                 <img src={img3} alt="" className="w-full rounded-xl" />
             </div> 
-            <div id="item4" className="carousel-item w-full carousel-img">
+            <div id="item4" className="carousel-item w-full carousel-img relative">
                 <img src={img4} alt="" className="w-full rounded-xl" />
             </div>
-            <div id="item5" className="carousel-item w-full carousel-img">
+            <div id="item5" className="carousel-item w-full carousel-img relative">
                 <img src={img5} alt="" className="w-full rounded-xl" />
             </div>
-            <div id="item6" className="carousel-item w-full carousel-img">
+            <div id="item6" className="carousel-item w-full carousel-img relative">
                 <img src={img6} alt="" className="w-full rounded-xl" />
             </div>
             
