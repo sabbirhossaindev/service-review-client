@@ -16,6 +16,7 @@ const SignUp = () => {
         
         createUser(email, password)
         .then(result => {
+            toast.success('SingUp Successful !')
             const user = result.user;
             console.log(user);
         })
