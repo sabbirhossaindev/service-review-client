@@ -10,7 +10,7 @@ const Feedback = () => {
             <div className='text-center mb-5 mt-8'>
                 <p className="text-2xl font-bold text-rose-600">FeetBack</p>
                 <h2 className="text-5xl font-semibold">What Customer Says</h2>
-                <p className='mt-3 text-gray-500'>“Thank you for being the dedicated, thoughtful, and compassionate doctor that you are! You always go above and beyond and work tirelessly towards a healthy outcome. I feel so blessed to know you and have you as my doctor.”</p>
+                <p className='mt-3 text-xl text-gray-500'>“Thank you for being the dedicated, thoughtful, and compassionate doctor that you are! You always go above and beyond and work tirelessly towards a healthy outcome. I feel so blessed to know you and have you as my doctor.”</p>
             </div>
 
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-14 p-3'>
@@ -30,7 +30,7 @@ const Feedback = () => {
                         </div>
                     </div>
                     <div className='p-5'>
-                        <p className='text-gray-500'>Eye Health Vision Centers, located throughout the South Coast region of Massachusetts and Rhode Island, is very pleased to be able to offer this growing collection of real patient feedback and reviews. Online feedback has become an immensely important way for patients to research medical providers, including optometrists, ophthalmologists, and opticians. At each of our five facilities, our top priority is ensuring our patients best vision and eye health, which are crucial to living a full and independent life.</p>
+                        <p className='text-xl text-gray-500'>Eye Health Vision Centers, located throughout the South Coast region of Massachusetts and Rhode Island, is very pleased to be able to offer this growing collection of real patient feedback and reviews. At each of our five facilities, our top priority is ensuring our patients best vision and eye health, which are crucial to living a full and independent life.</p>
                         <h4 className='flex mt-3 gap-1'>
                             <BsFillStarFill className='text-orange-500' />
                             <BsFillStarFill className='text-orange-500' />
@@ -57,7 +57,7 @@ const Feedback = () => {
                         </div>
                     </div>
                     <div className='p-5'>
-                        <p className='text-gray-500'>A blood test sometimes referred to as a blood panel is a laboratory examination of a blood sample used to check for a variety of things, including the functioning of certain organs such as the liver, kidneys, thyroid and heart, infections and certain genetic disorders, as well as to assess an individual's general health.</p>
+                        <p className='text-xl text-gray-500'>A blood test sometimes referred to as a blood panel is a laboratory examination of a blood sample used to check for a variety of things, including the functioning of certain organs such as the liver, kidneys, thyroid and heart, infections and certain genetic disorders, as well as to assess an individual's general health.</p>
                         <h4 className='flex mt-3 gap-1'>
                             <BsFillStarFill className='text-orange-500' />
                             <BsFillStarFill className='text-orange-500' />

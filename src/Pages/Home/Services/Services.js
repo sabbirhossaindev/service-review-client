@@ -11,9 +11,9 @@ const Services = () => {
         .then(data => setServices(data))
     }, [])
     return (
-        <section className='mt-20 mb-20'>
+        <section className='my-20 mb-20'>
             <div className='text-center mb-4'>
-                <p className="text-2xl font-bold text-orange-600">Services</p>
+                <p className="text-2xl font-bold text-rose-600">Services</p>
                 <h2 className="text-5xl font-semibold">My Service Area</h2>
                 <p className='mt-3 p-2 text-xl text-gray-500'>Consulting a healthcare professional, buying medicine, ordering lab <br /> tests and improving your health and wellbeing, all can be done 24/7 with DocTime! </p>
             </div>
