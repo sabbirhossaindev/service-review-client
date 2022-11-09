@@ -8,6 +8,7 @@ import Login from "../../Pages/Login/Login";
 import Services from "../../Pages/Services/Services";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import SignUp from "../../Pages/SignUp/SignUp";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -23,13 +24,19 @@ const router = createBrowserRouter([
                 path: '/services',
                 element: <Services></Services>
             },
+            // {
+            //     path: '/detailService/:id',
+            //     element: <Services></Services>,
+            //     loader: ({params}) =>fetch(`http://localhost:5000/services/${params.id}`)
+            // },
             {
                 path: '/addService',
-                element: <AddService></AddService>
+                element: <PrivateRoute><AddService></AddService></PrivateRoute>
             },
             {
                 path: '/addReview',
-                element: <AddReview></AddReview>
+                element: <PrivateRoute><AddReview></AddReview></PrivateRoute>,
+                loader: ({params}) =>fetch(`http://localhost:5000/addServic/${params.id}`)
             },
             {
                 path: '/login',

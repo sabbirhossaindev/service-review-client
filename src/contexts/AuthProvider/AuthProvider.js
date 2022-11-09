@@ -29,9 +29,6 @@ const AuthProvider = ({children}) => {
         return signInWithPopup(auth, googleProvider);
     };
 
-   
-
-
     const logOut = () => {
         localStorage.removeItem('Genius-token');
         return signOut(auth)

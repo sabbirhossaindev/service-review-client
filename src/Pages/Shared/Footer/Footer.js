@@ -7,8 +7,11 @@ const Footer = () => {
     return (
         <footer className="footer p-28 bg-black text-white">
             <div>
-                <img src={logo} alt="" className='logo rounded-xl'/>
-                <p className='text-xl text-rose-500 mt-4'>Copy Right 2022 || All Rights  <br />
+                <Link to="/" className="btn btn-ghost normal-case text-xl mb-3">
+                    <img src={logo} alt="" className='logo rounded-xl mr-3' />
+                    <h2 className='text-2xl text-rose-500'>Doctor Scroll</h2>
+                </Link>
+                <p className='text-xl text-sky-500 mt-4'>Copy Right 2022 || All Rights  <br />
                 Reserved Doctor Service...&copy;</p>
             </div> 
             <div>

@@ -17,8 +17,7 @@ const ServiceCardDetails = ({service}) => {
                 <p className='text-xl text-orange-600 font-semibold'>Price: {price}</p>
                 <p className='text-xl text-gray-500'>{description}</p>
                 <div className="card-actions justify-end">
-                    <Link className='btn btn-secondary' to={`/addService${_id}`}><button className="text-white text-xl inline-flex justify-center items-center">
-                       Add Service <BsArrowRight /> </button></Link>
+                    <Link className='btn btn-secondary' to={`/addService${_id}`}><button className="text-white text-3xl inline-flex justify-center items-center"> <BsArrowRight /> </button></Link>
                 </div>
             </div>
         </div>

@@ -17,14 +17,13 @@ const Header = () => {
     const menuItems = 
     <>
         <li className='font-semibold'><Link to='/'>Home</Link></li>
-        <li className='font-semibold'><Link to='/services'>Services</Link></li>
-        <li className='font-semibold'><Link to='/addService'>Add Service</Link></li>
-        <li className='font-semibold'><Link to='/addReview'>Add Review</Link></li>
         <li className='font-semibold'><Link to='/blogs'>Blogs</Link></li>
         {
             user?.email ? 
             <>
-            {/* <li className='font-semibold'><Link to='/orders'>Orders</Link></li> */}
+            
+            <li className='font-semibold'><Link to='/addService'>Add Service</Link></li>
+            <li className='font-semibold'><Link to='/addReview'>Add Review</Link></li>
             <li className='font-semibold mr-20'>
                 <button onClick={handleLogOut} className='btn-ghost bg-blue-400 text-white'>Sign Out</button>
             </li>
@@ -46,7 +45,8 @@ const Header = () => {
                     </ul>
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
-                    <img src={logo} alt=""  className='logo rounded-xl'/>
+                    <img src={logo} alt="" className='logo rounded-xl mr-3' />
+                    <h2 className='text-2xl text-rose-500'>Doctor Scroll</h2>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
