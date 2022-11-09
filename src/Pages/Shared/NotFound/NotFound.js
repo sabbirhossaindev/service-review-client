@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import error from '../../../assets/img/error.gif';
@@ -7,6 +8,9 @@ import error from '../../../assets/img/error.gif';
 const NotFound = () => {
     return (
         <div className='grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-1 mb-10 mt-5'>
+            <Helmet>
+                <title>NotFound</title>
+            </Helmet>
             <div className="card w-96 bg-base-100 shadow-xl items-center justify-center text-center">
                 <figure className="px-10 pt-10">
                     <img src={error} alt="Shoes" className="rounded-xl" />

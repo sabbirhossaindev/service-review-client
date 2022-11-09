@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 const Blogs = () => {
     return (
         <section className='mt-8 mb-10 p-5'>
+            <Helmet>
+                <title>Blogs</title>
+            </Helmet>
             <div>
                 <h2 className='text-3xl text-rose-600 text-center mb-4'>Welcome to Blogs Component</h2>
             </div>

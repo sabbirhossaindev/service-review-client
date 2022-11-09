@@ -4,6 +4,7 @@ import img from '../../assets/img/login.gif';
 import { FcGoogle } from "react-icons/fc";
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
 
@@ -56,6 +57,9 @@ const Login = () => {
 
     return (
         <div className="hero w-full my-20">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
                 <div className="text-center lg:text-left">
                     <img className='w-3/4 rounded-md' src={img} alt="" />

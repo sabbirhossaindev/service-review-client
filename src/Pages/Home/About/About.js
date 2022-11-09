@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import person from '../../../assets/banner/1.jpg'
@@ -6,6 +7,9 @@ import person from '../../../assets/banner/1.jpg'
 const About = () => {
     return (
         <section className='my-10'>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div>
                 <p className="text-2xl text-center font-bold text-rose-600">About Me</p>
             </div>

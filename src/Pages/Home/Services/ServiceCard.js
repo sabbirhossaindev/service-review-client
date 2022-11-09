@@ -18,7 +18,7 @@ const ServiceCard = ({service}) => {
                 <p className='text-xl text-orange-600 font-semibold'>Price: {price}</p>
                 <p className='text-xl text-gray-500'>{description.slice(0, 100) + " ..."}</p>
                 <div className="card-actions justify-end">
-                    <Link className='btn btn-secondary' to='/services'><button className="text-white text-xl inline-flex justify-center items-center">
+                    <Link className='btn btn-secondary' to='/singleService'><button className="text-white text-xl inline-flex justify-center items-center">
                        Details <BsArrowRight /> </button></Link>
                 </div>
             </div>

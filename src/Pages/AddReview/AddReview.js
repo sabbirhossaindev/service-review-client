@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
@@ -31,6 +32,9 @@ const AddReview = () => {
 
     return (
         <div className='p-5'>
+            <Helmet>
+                <title>Add Review</title>
+            </Helmet>
             <form onSubmit={handlePlaceOrder}>
                 <h2 className="text-4xl text-center mt-5 text-purple-500">Review For: {title}</h2>
                 <h4 className="text-3xl text-center mb-5 text-rose-500">Price: {price}</h4>
