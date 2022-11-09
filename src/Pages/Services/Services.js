@@ -10,6 +10,9 @@ const Services = () => {
     }, [])
     return (
         <section className='mt-10 mb-10'>
+            <div>
+                <h2 className='text-3xl text-bold text-rose-600 text-center'>My Services Component</h2>
+            </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     services.map(service => <ServiceCardDetails

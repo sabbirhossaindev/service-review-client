@@ -4,7 +4,7 @@ import AddReview from "../../Pages/AddReview/AddReview";
 import AddService from "../../Pages/AddService/AddService";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Home from "../../Pages/Home/Home/Home";
-import SingleService from "../../Pages/Home/Services/SingleService";
+import ServiceDetail from "../../Pages/Home/Services/ServiceDetail";
 import Login from "../../Pages/Login/Login";
 import Services from "../../Pages/Services/Services";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
@@ -26,8 +26,9 @@ const router = createBrowserRouter([
                 element: <Services></Services>
             },
             {
-                path: '/singleService',
-                element: <SingleService></SingleService>
+                path: '/services/:id',
+                element: <ServiceDetail></ServiceDetail>,
+                loader: ({params}) => fetch(`http://localhost:5000/services/${params.id}`)
             },
             {
                 path: '/addService',
