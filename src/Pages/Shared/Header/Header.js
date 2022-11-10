@@ -47,7 +47,7 @@ const Header = () => {
                 </div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl">
                     <img src={logo} alt="" className='logo rounded-xl mr-3' />
-                    <h2 className='text-2xl text-rose-500'>Doctor Scroll</h2>
+                    <h2 className='text-2xl text-rose-500'>Pro || Doctor</h2>
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">

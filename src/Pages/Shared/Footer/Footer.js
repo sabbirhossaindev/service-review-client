@@ -9,7 +9,7 @@ const Footer = () => {
             <div>
                 <Link to="/" className="btn btn-ghost normal-case text-xl mb-3">
                     <img src={logo} alt="" className='logo rounded-xl mr-3' />
-                    <h2 className='text-2xl text-rose-500'>Doctor Scroll</h2>
+                    <h2 className='text-2xl text-rose-500'>Pro || Doctor</h2>
                 </Link>
                 <p className='text-xl text-sky-500 mt-4'>Copy Right 2022 || All Rights  <br />
                 Reserved Doctor Service...&copy;</p>
