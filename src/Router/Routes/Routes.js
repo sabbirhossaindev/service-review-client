@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../../layout/Main";
-import AddReview from "../../Pages/AddReview/AddReview";
 import AddService from "../../Pages/AddService/AddService";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Home from "../../Pages/Home/Home/Home";
 import ServiceDetail from "../../Pages/Home/Services/ServiceDetail";
 import Login from "../../Pages/Login/Login";
+import MyReview from "../../Pages/MyReview/MyReview";
+// import MyReview from "../../Pages/MyReview/MyReview";
 import Services from "../../Pages/Services/Services";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import SignUp from "../../Pages/SignUp/SignUp";
@@ -35,9 +36,8 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><AddService></AddService></PrivateRoute>
             },
             {
-                path: '/addReview',
-                element: <PrivateRoute><AddReview></AddReview></PrivateRoute>,
-                loader: ({params}) =>fetch(`http://localhost:5000/addServic/${params.id}`)
+                path: '/myReview',
+                element: <MyReview></MyReview>
             },
             {
                 path: '/login',
