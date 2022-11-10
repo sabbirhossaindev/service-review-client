@@ -11,7 +11,7 @@ const MyReview = () => {
     useEffect(() => {
         fetch(`http://localhost:5000/myReview?email=${user?.email}`, {
             headers: {
-                authorization: `Bearer ${localStorage.getItem('Genius-token')}`
+                authorization: `Bearer ${localStorage.getItem('Doctor-token')}`
             }
         })
             .then(res => {
@@ -27,7 +27,7 @@ const MyReview = () => {
     }, [user?.email, logOut])
     
         const handleDelete = id =>{
-            const proceed = window.confirm('Are you sure, you want to cancel this order');
+            const proceed = window.confirm('Are you sure, you want to cancel this review');
             if(proceed){
                 fetch(`http://localhost:5000/myReview/${id}`, {
                     method: 'DELETE',
@@ -52,7 +52,7 @@ const MyReview = () => {
             method: 'PATCH', 
             headers: {
                 'content-type': 'application/json',
-                authorization: `Bearer ${localStorage.getItem('Genius-token')}`
+                authorization: `Bearer ${localStorage.getItem('Doctor-token')}`
             },
             body: JSON.stringify({status: 'Approved'})
         })

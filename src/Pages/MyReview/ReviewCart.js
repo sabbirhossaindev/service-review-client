@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import { BsFillTrash2Fill } from 'react-icons/bs';
 
 const ReviewCart = ({ rev, handleDelete, handleStatusUpdate }) => {
-    const { _id, customer, message, service, serviceName, price, status  } = rev;
+    const { _id, message, service, serviceName, price, status} = rev;
     const [reviewService, setReviewService] = useState({})
 
     useEffect(() => {
@@ -33,7 +33,6 @@ const ReviewCart = ({ rev, handleDelete, handleStatusUpdate }) => {
                         </div>
                     </div>
                     <div>
-                        <div className="font-bold">{customer}</div>
                         <div className="text-sm opacity-50">{price}</div>
                     </div>
                 </div>

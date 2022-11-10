@@ -1,13 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import ServiceCardDetails from './ServiceCardDetails';
 
 const Services = () => {
     const [services, setServices] = useState([]);
+    const { user } = useContext(AuthContext);
     useEffect( () =>{
-        fetch('http://localhost:5000/services')
+        fetch(`http://localhost:5000/services?email=${user?.email}`)
         .then(res =>res.json())
         .then(data => setServices(data))
-    }, [])
+    }, [user?.email])
     return (
         <section className='mt-10 mb-10'>
             <div>

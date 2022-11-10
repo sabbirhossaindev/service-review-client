@@ -9,7 +9,7 @@ const ServiceDetail = () => {
     const { _id, img, price, title, description } = service;
     const { user } = useContext(AuthContext);
 
-    const handlePlaceOrder = event => {
+    const handleService = event => {
         event.preventDefault();
         const form = event.target;
         const name = `${form.firstName.value} ${form.lastName.value}`;
@@ -37,15 +37,13 @@ const ServiceDetail = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 if(data.acknowledged){
                     toast.success('Submit successfully')
                     form.reset();
                     
                 }
             })
-            .catch(er => console.error(er));
-        
+            .catch(er => console.error(er));  
     }
     
     return (
@@ -65,7 +63,7 @@ const ServiceDetail = () => {
 
             <div>
                 <div className='p-5'>
-                    <form onSubmit={handlePlaceOrder}>
+                    <form onSubmit={handleService}>
                         <h2 className="text-4xl text-center mt-5 text-purple-500">Service: {title}</h2>
                         <h4 className="text-3xl text-center mb-5 text-rose-500">Price: {price}</h4>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
