@@ -1,4 +1,5 @@
 import React, {useState } from 'react';
+import ReviewCart from './ReviewCart';
 
 
 const MyReview = () => {
@@ -8,10 +9,13 @@ const MyReview = () => {
         .then(res => res.json())
         .then(data => setReview(data))
     return (
-        <div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laudantium quisquam exercitationem veritatis nobis voluptatibus beatae excepturi rem labore ex id error quis laboriosam illo distinctio, nisi dicta. Dolores cumque voluptatem sint eligendi. Recusandae nisi odit vero explicabo voluptate quaerat dignissimos, labore molestiae reprehenderit </p>
+        <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             {
-                review?.map(r => <h1></h1> )
+                review?.map(rev => <ReviewCart
+                    key={rev._id}
+                    rev={rev}
+                >
+                </ReviewCart>)
             }
         </div>
     );

@@ -6,7 +6,6 @@ import Home from "../../Pages/Home/Home/Home";
 import ServiceDetail from "../../Pages/Home/Services/ServiceDetail";
 import Login from "../../Pages/Login/Login";
 import MyReview from "../../Pages/MyReview/MyReview";
-// import MyReview from "../../Pages/MyReview/MyReview";
 import Services from "../../Pages/Services/Services";
 import NotFound from "../../Pages/Shared/NotFound/NotFound";
 import SignUp from "../../Pages/SignUp/SignUp";
