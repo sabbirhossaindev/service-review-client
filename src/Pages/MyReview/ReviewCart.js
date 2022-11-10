@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { BsFillTrash2Fill } from 'react-icons/bs';
 
 const ReviewCart = ({ rev, handleDelete, handleStatusUpdate }) => {
@@ -13,6 +14,9 @@ const ReviewCart = ({ rev, handleDelete, handleStatusUpdate }) => {
 
     return (
         <tr>
+            <Helmet>
+                <title>My Review</title>
+            </Helmet>
             <th>
                 <label>
                     <button onClick={() => handleDelete(_id)} className='btn btn-ghost'><BsFillTrash2Fill className='text-red-700' /></button>

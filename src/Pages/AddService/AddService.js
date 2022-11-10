@@ -1,16 +1,41 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { toast } from 'react-toastify';
 
 const AddService = () => {
 
     const handleAddService = event => {
         event.preventDefault();
         const form = event.target;
-        const serviceName = form.serviceName.value;
-        const service = form.service.value;
-        const number = form.number.value;
+        const title = form.title.value;
+        const id = form.id.value;
+        const img = form.img.value;
+        const price = form.price.value;
         const message = form.message.value;
-        console.log(serviceName, service, number, message);
+        console.log(title, price, img, id, message);
+
+    const newService = {
+        title: title,
+        price: price,
+        img: img,
+        id: id,
+        description: message
+    }
+    fetch('http://localhost:5000/services', {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(newService)
+    })
+        .then(res => res.json())
+        .then(data =>{
+            console.log(data)
+            toast.success('Service add successful')
+        })
+        .catch(error => toast.error(error.message))
+
+
     }
     
     return (
@@ -24,10 +49,10 @@ const AddService = () => {
             <div className='p-5'>
             <form onSubmit={handleAddService}>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
-                    <input name="serviceName" type="text" placeholder="edit service name" className="input input-ghost w-full  input-bordered" />
-                    <input name="service" type="text" placeholder="Enter Service Id" className="input input-ghost w-full  input-bordered" />
-                    <input name="name" type="text" placeholder="Service url" className="input input-ghost w-full  input-bordered" />
-                    <input name="number" type="text" placeholder="Balance" className="input input-ghost w-full  input-bordered" required />
+                    <input name="title" type="text" placeholder="title" className="input input-ghost w-full  input-bordered" />
+                    <input name="img" type="text" placeholder="photoURL" className="input input-ghost w-full  input-bordered" />
+                    <input name="id" type="text" placeholder="id" className="input input-ghost w-full  input-bordered" />
+                    <input name="price" type="text" placeholder="price" className="input input-ghost w-full  input-bordered" />
                 </div>
                 <textarea name="message" className="textarea textarea-bordered h-24 w-full mt-4" placeholder="Description" required></textarea>
 
