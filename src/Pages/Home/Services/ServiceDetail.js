@@ -1,4 +1,4 @@
-import React, { useContext,} from 'react';
+import React, { useContext} from 'react';
 import { toast } from 'react-toastify';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import { useLoaderData } from 'react-router-dom';
@@ -7,10 +7,9 @@ import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 const ServiceDetail = () => {
 
     const service = useLoaderData();
-    console.log('service', service);
+    console.log('single service', service);
     const { _id, img, price, title, description } = service;
     const { user } = useContext(AuthContext);
-
 
     const handleService = event => {
         event.preventDefault();
@@ -32,7 +31,7 @@ const ServiceDetail = () => {
         }
 
         fetch(`https://y-six-neon.vercel.app/services`, {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },

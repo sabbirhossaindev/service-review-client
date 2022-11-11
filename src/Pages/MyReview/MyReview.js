@@ -40,7 +40,7 @@ const MyReview = () => {
                     console.log(data);
                     if (data.deletedCount > 0){
                         toast.success('deleted successfully!')
-                        const remaining = review.filter(odr => odr._id !== id);
+                        const remaining = review.filter(rev => rev._id !== id);
                         setReview(remaining);
                     }
                 })
@@ -61,8 +61,8 @@ const MyReview = () => {
         .then(data => {
             console.log(data);
             if(data.modifiedCount > 0) {
-                const remaining = review.filter(odr => odr._id !== id);
-                const approving = review.find(odr => odr._id === id);
+                const remaining = review.filter(rev => rev._id !== id);
+                const approving = review.find(rev => rev._id === id);
                 approving.status = 'Approved'
 
                 const newReview = [approving, ...remaining];
