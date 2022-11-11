@@ -7,7 +7,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect( () =>{
-        fetch('http://localhost:5000/limitsServices')
+        fetch('https://y-six-neon.vercel.app/limitsServices')
         .then(res =>res.json())
         .then(data => setServices(data))
     }, [])

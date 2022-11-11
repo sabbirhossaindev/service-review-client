@@ -7,7 +7,7 @@ const ReviewCart = ({ rev, handleDelete, handleStatusUpdate }) => {
     const [reviewService, setReviewService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${service}`)
+        fetch(`https://y-six-neon.vercel.app/services/${service}`)
             .then(res => res.json())
             .then(data => setReviewService(data));
     }, [service])

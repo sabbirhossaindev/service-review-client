@@ -21,7 +21,7 @@ const AddService = () => {
         id: id,
         description: message
     }
-    fetch('http://localhost:5000/services', {
+    fetch('https://y-six-neon.vercel.app/services', {
         method: 'POST',
         headers: {
             'content-type': 'application/json'

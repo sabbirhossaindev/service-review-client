@@ -9,7 +9,7 @@ const MyReview = () => {
     const { user, logOut } = useContext(AuthContext);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myReview?email=${user?.email}`, {
+        fetch(`https://y-six-neon.vercel.app/myReview?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('Doctor-token')}`
             }
@@ -29,7 +29,7 @@ const MyReview = () => {
         const handleDelete = id =>{
             const proceed = window.confirm('Are you sure, you want to cancel this review');
             if(proceed){
-                fetch(`http://localhost:5000/myReview/${id}`, {
+                fetch(`https://y-six-neon.vercel.app/myReview/${id}`, {
                     method: 'DELETE',
                     headers: {
                         authorization: `Bearer ${localStorage.getItem('Doctor-token')}`
@@ -48,7 +48,7 @@ const MyReview = () => {
         }
     
     const handleStatusUpdate = id => {
-        fetch(`http://localhost:5000/myReview/${id}`, {
+        fetch(`https://y-six-neon.vercel.app/myReview/${id}`, {
             method: 'PATCH', 
             headers: {
                 'content-type': 'application/json',

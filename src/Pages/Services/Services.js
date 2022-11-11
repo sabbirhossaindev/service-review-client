@@ -6,7 +6,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
     const { user } = useContext(AuthContext);
     useEffect( () =>{
-        fetch(`http://localhost:5000/services?email=${user?.email}`)
+        fetch(`https://y-six-neon.vercel.app/services?email=${user?.email}`)
         .then(res =>res.json())
         .then(data => setServices(data))
     }, [user?.email])
